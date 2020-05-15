@@ -24,6 +24,7 @@ export default function Home({data, now}) {
 export async function getServerSideProps(context) {
   let data = await Promise.resolve('teal')
   let now = Date.now()
+  console.log('now', now)
   return {
     props: {
       data,
